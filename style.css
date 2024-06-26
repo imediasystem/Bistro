@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Globalne style tekstu */
+
+body {
+	font-family: 'Cardo', serif;
+	font-size: 48px;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	color: #7F8C8D;
+	line-height: 1.7;
+	transition: all 0.5s;
+}
+
+p {
+	margin-top: 6px;
+}
+
+h2, h3, h4, label {
+	color: #000000;
+}
+
+h1 {
+	font-size: 54px;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 48px;
+	text-transform: uppercase;
+	text-shadow: 0.1em 0.1em 0.1em grey;
+	color: #000000;
+	border: 1px solid black;
+	box-shadow: 2px 4px 10px 4px grey;
+	border-radius: 5px;
+	background-color: #c39400;
+}
+
+h4, strong {
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Kolumny, kontener, sekcje */
+
+.col-one-third, .col-half {
+	width: 100%;
+	float: none;
+}
+
+.intro img {
+	object-fit: contain;
+}
+
+section {
+	clear: both;
+	padding: 90px 0;
+	overflow: auto;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.center-text {
+	text-align: center;
+}
+
+/* Przyciski */
+
+.button {
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 16px 0;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	background: #c39400;
+	border: 1px solid black;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.1em gray;
+	transition: transition;
+}
+
+.button:hover {
+	color: #FFFFFF;
+	transition: transition;
+}
+
+/* Naglowek strony */
+
+.top {
+	height: 60px;
+	background: #c39400;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin: 0 0;
+	padding: 0 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.top a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: 0.1em 0.1em 0.1em black;
+	font-weight: bold;
+	font-size: 22px;
+	transition: transition;
+}
+
+.top a:hover {
+	color: #3e2b0d;
+	transition: transition;
+}
+
+.logo {
+	float: left;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 60px;
+}
+
+.logo i{
+	color: #FFFFFF;
+	text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.main-menu {
+	float: right;
+}
+
+.main-menu li {
+	float: left;
+	line-height: 60px;
+	padding: 0 10px;
+}
+
+/* Baner */
+
+.banner {
+	color: #FFFFFF;
+	padding: 200px 0;
+	background: url("img/top.jpg") 0 -140px;
+	background-position: center 90%;
+}
+
+.banner h1 {
+	font-size: 74px;
+	margin-bottom: 30px;
+	text-shadow: 0.1em 0.1em 0.1em black;
+	background: rgba(0,0,0,0.5);
+	letter-spacing: 4px;
+}
+
+/* Sekcja Intro */
+
+.intro img {
+	margin: 32px 0;
+	width: 180px;
+	height: 180px;
+}
+
+.intro h3 {
+	color: #000000;
+	margin: 10px 40px;
+	text-shadow: 0.1em 0.1em 0.1em gray;
+	border: 1px solid black;
+	box-shadow: 2px 4px 10px 4px grey;
+	border-radius: 5px;
+	background-color: #c39400;
+}
+
+.intro p {
+	color: #000000;
+	font-weight: bold;
+	margin: 0 40px;
+	text-align: center;
+}
+
+/* Sekcja Promo */
+
+.promo {
+	background: #3e2b0d;
+}
+
+.promo h2 {
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.promo p {
+	color: #EEEEEE;
+	margin: 0 20px;
+}
+
+.promo .col-half {
+	text-align: center;
+}
+
+/* Sekcja Rezerwacje */
+
+.booking .col-half {
+	text-align: center;
+}
+
+/* Sekcja Kontakt */
+
+.contact input {
+	margin-bottom: 16px;
+	border-radius: 2px;
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	width: 80%;
+}
+
+.contact .col-half {
+	margin-top: 16px;
+}
+
+.iframe {
+	border: 1px solid black;
+}
+
+/* Stopka */
+
+.site-footer {
+	background: #c39400;
+	color: #000000;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.1em gray;
+	padding: 16px 0;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 960px) {
+	.col-one-third {
+		width: 33.33%;
+		float: left;
+	}
+	.col-half {
+		width: 50%;
+		float: left;
+	}
+}
