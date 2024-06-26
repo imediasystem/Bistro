@@ -1,1 +1,1 @@
-Strona testowa restauracji Bistro Brata
+My project of website for local restaurant Bistro Brata
