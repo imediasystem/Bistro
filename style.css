@@ -147,7 +147,7 @@ section {
 /* Naglowek strony */
 
 .top {
-	height: 60px;
+	height: auto;
 	background: #c39400;
 	position: fixed;
 	left: 0;
@@ -189,7 +189,7 @@ section {
 }
 
 .main-menu li {
-	float: left;
+	display: inline-block;
 	line-height: 60px;
 	padding: 0 10px;
 }
