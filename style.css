@@ -248,10 +248,15 @@ section {
 	text-shadow: 0.1em 0.1em 0.1em black;
 }
 
-.promo p {
-	color: #EEEEEE;
-	margin: 0 20px;
+.promo ul li {
+	color: #ffffff;
+	text-align: left;
+	margin: 10px 0 0 50px;
 }
+
+.promo ul li:before {
+	content: ' \2705';
+  }
 
 .promo .col-half {
 	text-align: center;
