@@ -262,12 +262,26 @@ section {
 	text-align: center;
 }
 
+/* Sekcja Menu Dnia */
+
+.menu .col-half {
+	text-align: center;
+}
+
 /* Sekcja Rezerwacje */
+
+.booking {
+	background: #3e2b0d;
+}
 
 .booking .col-half {
 	text-align: center;
 }
 
+.booking h2 {
+	color: #FFFFFF;
+	text-shadow: 0.1em 0.1em 0.1em black;
+}
 /* Sekcja Kontakt */
 
 .contact input {
