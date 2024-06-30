@@ -278,19 +278,25 @@ section {
 	text-align: center;
 }
 
+.booking .col-half label {
+	color: #FFFFFF;
+
+}
+
 .booking h2 {
 	color: #FFFFFF;
 	text-shadow: 0.1em 0.1em 0.1em black;
 }
-/* Sekcja Kontakt */
 
-.contact input {
+.booking input {
 	margin-bottom: 16px;
 	border-radius: 2px;
 	border: 1px solid #DDDDDD;
 	padding: 8px;
-	width: 80%;
+	width: 70%;
 }
+
+/* Sekcja Kontakt */
 
 .contact .col-half {
 	margin-top: 16px;
@@ -316,7 +322,7 @@ iframe {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 800px) {
 	.col-one-third {
 		width: 33.33%;
 		float: left;
@@ -324,5 +330,9 @@ iframe {
 	.col-half {
 		width: 50%;
 		float: left;
+	}
+	.logo .main-menu {
+		width: 100%;
+		display: block;
 	}
 }

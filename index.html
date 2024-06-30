@@ -45,7 +45,7 @@
 			<div class="container center-text">
 				<h1>Najlepsze Bistro<br>
 				w mieście</h1>
-				<a href="index.html" class="button">Sprawdź menu</a>			
+				<a href="#menu" class="button">Sprawdź menu</a>			
 			</div>			
 		</section>
 
@@ -104,6 +104,7 @@
 				<div class="col-half">
 					<h2>Menu dnia</h2>
 					<br>
+					<img src="img/postit-420.png" alt="Menu">
 				</div>
 				<div class="col-half">
 					<img src="img/dekor_2.png" alt="Salmon">
@@ -116,7 +117,24 @@
 			<div class="container">
 				<h2 class="center-text">Zrób rezerwację</h2>
 					<div class="col-half">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum libero, dicta quasi.</p>
+						<form action="/action_page.php">
+							<label for="name">
+								<strong>Imię i nazwisko</strong>
+							</label><br>
+							<input type="text" name="name" id="name"><br>
+	
+							<label for="email">
+								<strong>Email</strong>
+							</label><br>
+							<input type="text" name="email" id="email"><br>
+	
+							<label for="date">
+								<strong>Podaj termin</strong>
+							</label><br>
+							<input type="date" name="date" id="date"><br>
+	
+							<button type="submit" class="button" id="login">Potwierdź</button>
+						</form>
 					</div>
 					<div class="col-half">
 						<img src="img/calendar_yellow_350.png" alt="Terminarz">
@@ -129,24 +147,7 @@
 			<div class="container">
 				<h2 class="center-text">Skontaktuj się z nami</h2>
 				<div class="col-half">
-					<form action="">
-						<label for="name">
-							<strong>Imię i nazwisko</strong>
-						</label><br>
-						<input type="text" name="name" id="name"><br>
-
-						<label for="email">
-							<strong>Email</strong>
-						</label><br>
-						<input type="text" name="email" id="email"><br>
-
-						<label for="date">
-							<strong>Termin</strong>
-						</label><br>
-						<input type="text" name="date" id="date"><br>
-
-						<button type="submit" class="button" id="login">Potwierdź</button>
-					</form>
+					
 				</div>
 				<div class="col-half" id="contact-right">
 					<h4>Znajdź nas</h4>
