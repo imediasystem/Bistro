@@ -98,7 +98,7 @@ h3 {
 /* Kolumny, kontener, sekcje */
 
 .col-one-third, .col-half {
-	width: 100%;
+	width: 80%;
 	float: none;
 }
 
@@ -300,6 +300,7 @@ section {
 
 .contact .col-half {
 	margin-top: 16px;
+	text-align: center;
 }
 
 iframe {
