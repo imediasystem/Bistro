@@ -224,13 +224,13 @@ section {
 	margin: 10px 40px;
 	text-shadow: 0.1em 0.1em 0.1em gray;
 	border: 1px solid black;
-	box-shadow: 2px 4px 10px 4px grey;
+	box-shadow: 2px 4px 10px 4px gray;
 	border-radius: 5px;
 	background-color: #c39400;
 }
 
 .intro p {
-	color: #000000;
+	color: gray;
 	font-weight: bold;
 	margin: 0 40px;
 	text-align: center;
@@ -301,6 +301,8 @@ section {
 .contact .col-half {
 	margin-top: 16px;
 	text-align: center;
+	color: gray;
+	font-weight: bold;
 }
 
 iframe {
