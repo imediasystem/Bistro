@@ -248,6 +248,11 @@ section {
 	text-shadow: 0.1em 0.1em 0.1em black;
 }
 
+.promo p {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
 .promo ul li {
 	color: #ffffff;
 	text-align: left;
@@ -266,6 +271,11 @@ section {
 
 .menu .col-half {
 	text-align: center;
+}
+
+.menu p {
+	color: gray;
+	font-weight: bold;
 }
 
 /* Sekcja Rezerwacje */
