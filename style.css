@@ -98,7 +98,7 @@ h3 {
 /* Kolumny, kontener, sekcje */
 
 .col-one-third, .col-half {
-	width: 100%;
+	width: 80%;
 	float: none;
 }
 
@@ -224,13 +224,13 @@ section {
 	margin: 10px 40px;
 	text-shadow: 0.1em 0.1em 0.1em gray;
 	border: 1px solid black;
-	box-shadow: 2px 4px 10px 4px grey;
+	box-shadow: 2px 4px 10px 4px gray;
 	border-radius: 5px;
 	background-color: #c39400;
 }
 
 .intro p {
-	color: #000000;
+	color: gray;
 	font-weight: bold;
 	margin: 0 40px;
 	text-align: center;
@@ -246,6 +246,11 @@ section {
 	color: #FFFFFF;
 	margin-bottom: 10px;
 	text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.promo p {
+	color: #FFFFFF;
+	font-weight: bold;
 }
 
 .promo ul li {
@@ -268,6 +273,11 @@ section {
 	text-align: center;
 }
 
+.menu p {
+	color: gray;
+	font-weight: bold;
+}
+
 /* Sekcja Rezerwacje */
 
 .booking {
@@ -278,22 +288,31 @@ section {
 	text-align: center;
 }
 
+.booking .col-half label {
+	color: #FFFFFF;
+
+}
+
 .booking h2 {
 	color: #FFFFFF;
 	text-shadow: 0.1em 0.1em 0.1em black;
 }
-/* Sekcja Kontakt */
 
-.contact input {
+.booking input {
 	margin-bottom: 16px;
 	border-radius: 2px;
 	border: 1px solid #DDDDDD;
 	padding: 8px;
-	width: 80%;
+	width: 70%;
 }
+
+/* Sekcja Kontakt */
 
 .contact .col-half {
 	margin-top: 16px;
+	text-align: center;
+	color: gray;
+	font-weight: bold;
 }
 
 iframe {
@@ -316,7 +335,7 @@ iframe {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 800px) {
 	.col-one-third {
 		width: 33.33%;
 		float: left;
@@ -324,5 +343,9 @@ iframe {
 	.col-half {
 		width: 50%;
 		float: left;
+	}
+	.logo .main-menu {
+		width: 100%;
+		display: block;
 	}
 }
