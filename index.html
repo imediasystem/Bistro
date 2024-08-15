@@ -21,44 +21,46 @@
 	</head>
 	<body>
 
-		<!-- Naglowek strony -->
+		<!-- Navigation menu -->
+		
 		<header class="top">
 			<div class="container">
 				<div class="logo">
 					<i class="fa-solid fa-utensils"></i><a href="#banner"> BISTRO BRATA</a><i class="fa-solid fa-utensils"></i>
 				</div>
 				<div class="main-menu">
-					<ul>
-						<li><a href="#banner">Start</a></li>
-						<li><a href="#intro">Oferta</a></li>
-						<li><a href="#promo">Promocje</a></li>
-						<li><a href="#menu">Menu</a></li>
-						<li><a href="#booking">Rezerwacje</a></li>
-						<li><a href="#contact">Kontakt</a></li>
+					<ul class="menu-items">
+						<li><a class="menu-link" href="#about">O nas</a></li>
+						<li><a class="menu-link" href="#promo">Promocje</a></li>
+						<li><a class="menu-link" href="#menu">Menu</a></li>
+						<li><a class="menu-link" href="#booking">Rezerwacje</a></li>
+						<li><a class="menu-link" href="#contacts">Kontakt</a></li>
 					</ul>				
 				</div>
 			</div>
 		</header>
 
 		<!-- Banner -->
+		
 		<section class="banner" id="banner">
 			<div class="container center-text">
 				<h1>Najlepsze Bistro<br>
 				w mieście</h1>
-				<a href="#menu" class="button">Zobacz danie dnia</a>			
+				<a href="#menu" class="button">Zobacz menu dnia</a>			
 			</div>			
 		</section>
 
-		<!-- Zalety oferty -->
-		<section class="intro" id="intro">
+		<!-- Offer -->
+		
+		<section class="about" id="about">
 			<div class="container">
-				<h2 class="center-text">Dlaczego warto nas wybrać</h2>
-				<p class="description">Nie każdy z nas ma czas lub ochotę gotować, bądź też czasem po prostu mamy ochotę spędzić czas ze znajomymi przy dobrym posiłku. Nasze Bistro to miejsce, które doskonale się sprawdza o każdej porze dnia. Rano zjecie tu pyszne, pożywne śniadanie i wypijecie dobrą włoską kawę. Codziennie czeka też na Was świeży lunch, a wieczór należy do smakowitych przekąsek, sałatek i wina. Pyszną kartę dań dopełnia przytulne wnętrze, w którym ma się ochotę przebywać bez końca. Nasze Bistro to powiew świeżości i nowe spojrzenie na tradycję kulinarną regionu w nowoczesnej oprawie.</p>
+				<h2 class="center-text">Dlaczego my</h2>
+					<p class="description">Nie każdy z nas ma czas lub ochotę gotować, bądź też czasem po prostu mamy ochotę spędzić czas ze znajomymi przy dobrym posiłku. Nasze Bistro to miejsce, które doskonale się sprawdza o każdej porze dnia. Rano zjecie tu pyszne, pożywne śniadanie i wypijecie dobrą włoską kawę. Codziennie czeka też na Was świeży lunch, a wieczór należy do smakowitych przekąsek, sałatek i wina. Pyszną kartę dań dopełnia przytulne wnętrze, w którym ma się ochotę przebywać bez końca. Nasze Bistro to powiew świeżości i nowe spojrzenie na tradycję kulinarną regionu w nowoczesnej oprawie.</p>
 				<div class="col-one-third center-text">
 					<img src="img/ikona_1.png" alt="Ikona 1">
 					<h3>Wyśmienite jedzenie</h3>
 					<br>
-					<p>Wszystkie propozycje opierają się na sprawdzonych, domowych przepisach, do przyrządzenia których wkładamy nie tylko świeże produkty, ale również dużo serca. Przyjmujemy także zamówienia telefoniczne oraz przygotowujemy dania na wynos.</p>
+					<p>Wszystkie propozycje opierają się na sprawdzonych, domowych przepisach, do przyrządzenia których wkładamy nie tylko świeże produkty, ale również dużo serca. Przyjmujemy także zamówienia telefoniczne oraz przygotowujemy dania na wynos również z dowozem.</p>
 				</div>
 				<div class="col-one-third center-text">
 					<img src="img/ikona_2.png" alt="Ikona 2">
@@ -70,13 +72,13 @@
 					<img src="img/ikona_3.png" alt="Ikona 3">
 					<h3>Imprezy okolicznościowe</h3>
 					<br>
-					<p>Gdy przychodzi czas na świętowanie zorganizujemy dla Ciebie przyjęcie/spotkanie/urodziny.
-						Oferujemy możliwość dowozu posiłków w przypadku większego zamówienia lub organizację imprezy zamkniętej w naszym bistro.</p>
+					<p>Gdy przychodzi czas na świętowanie zorganizujemy dla Ciebie przyjęcie / spotkanie / urodziny / imieniny. Oferujemy organizację imprezy zamkniętej w naszym bistro lub możliwość dowozu posiłków w przypadku większego zamówienia w formie cateringu.</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- Promocje -->
+		<!-- Promo -->
+		
 		<section class="promo" id="promo">
 			<div class="container">
 				<div class="col-half">
@@ -114,7 +116,8 @@
 			</div>
 		</section>
 		
-		<!-- Rezerwacje -->
+		<!-- Booking -->
+		
 		<section class="booking" id="booking">
 			<div class="container">
 				<h2 class="center-text">Zrób rezerwację</h2>
@@ -144,27 +147,35 @@
 			</div>
 		</section>
 
-		<!-- Kontakt -->
-		<section class="contact" id="contact">
+		<!-- Contacts -->
+		
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<h2 class="center-text">Skontaktuj się z nami</h2>
-				<div class="col-half" id="contact-left">
-					<h4>Zadzwoń</h4>
-					<p> +48 518379300</p><br>
-					<h4>Napisz</h4>
-					<p>bistro-brata@gmail.com</p><br>
-					<h4>Przyjedź</h4>
-					<p> Aleja Sikorskiego 26, 42-400 Zawiercie</p><br>
+				<div class="contacts-wrapper">
+					<article class="contact">
+						<h4>ZADZWOŃ</h4>
+						<p>+48 518379300</p>
+					</article>
+					<article class="contact">
+						<h4>NAPISZ</h4>
+					<p>bistro-brata@gmail.com</p>
+					</article>
+					<article class="contact">
+						<h4>PRZYJEDŹ</h4>
+					<p>Aleja Sikorskiego 26<br>42-400 Zawiercie</p>
+					</article>
 				</div>
-				<div class="col-half" id="contact-right">
-					<h4>Znajdź nas</h4>
+				<div class="Google-Maps">
+					<h4>ZNAJDŹ NAS</h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.812102958399!2d19.423297361706705!3d50.48184162057313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471723c39db2fca1%3A0x6ca611b0542218a9!2sBistro%20Mojego%20Brata%20-%20Imprezy%20Okoliczno%C5%9Bciowe!5e0!3m2!1spl!2sde!4v1719419299952!5m2!1spl!2sde" 
-					id="GoogleMaps" title="GoogleMap" width="420" height="321" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					id="GoogleMaps" title="GoogleMap" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>			
 		</section>
 
-		<!-- Stopka strony -->
+		<!-- Footer -->
+		
 		<footer class="site-footer">
 			<div class="container">
 				<p>© iMedia SysteM, 2024</p>

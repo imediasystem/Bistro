@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain) */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,16 +46,41 @@ table {
 	border-spacing: 0;
 }
 
-/* Globalne style tekstu */
+/* Global Site Styles */
+
+* { box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
 
 body {
 	font-family: 'Cardo', serif;
 	font-size: 48px;
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: 16px;
-	color: #7F8C8D;
-	line-height: 1.7;
+	background: #f3f3f3;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
 	transition: all 0.5s;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+section {
+	clear: both;
+	padding: 90px 0;
+	overflow: auto;
+}
+
+.center-text {
+	text-align: center;
 }
 
 p {
@@ -68,18 +92,17 @@ h2, h3, h4, label {
 }
 
 h1 {
-	font-size: 54px;
-	line-height: 1.2;
+	font-size: clamp(3rem, 6vw, 5rem);
+	line-height: 1.5;
 	font-weight: bold;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: clamp(1rem, 6vw, 2.5rem);
 	font-weight: bold;
 	margin-bottom: 48px;
 	text-transform: uppercase;
 	text-shadow: 0.1em 0.1em 0.1em grey;
-	color: #000000;
 	border: 1px solid black;
 	box-shadow: 2px 4px 10px 4px grey;
 	border-radius: 5px;
@@ -91,37 +114,11 @@ h4, strong {
 }
 
 h3 {
-	font-size: 18px;
+	font-size: clamp(0.7rem, 6vw, 1rem);
 	font-weight: bold;
 }
 
-/* Kolumny, kontener, sekcje */
-
-.col-one-third, .col-half {
-	width: 80%;
-	float: none;
-}
-
-.intro img {
-	object-fit: contain;
-}
-
-section {
-	clear: both;
-	padding: 90px 0;
-	overflow: auto;
-}
-
-.container {
-	max-width: 1080px;
-	margin: 0 auto;
-}
-
-.center-text {
-	text-align: center;
-}
-
-/* Przyciski */
+/* Buttons */
 
 .button {
 	display: inline-block;
@@ -144,7 +141,7 @@ section {
 	transition: transition;
 }
 
-/* Naglowek strony */
+/* Navigation Menu */
 
 .top {
 	height: auto;
@@ -194,32 +191,44 @@ section {
 	padding: 0 10px;
 }
 
-/* Baner */
+/* Banner */
 
 .banner {
+	position: relative;
 	color: #FFFFFF;
 	padding: 200px 0;
-	background: url("img/top.jpg") 0 -140px;
+	background: url("img/top.jpg");
+	height: 100vh;
 	background-position: center 90%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
 }
 
 .banner h1 {
-	font-size: 74px;
-	margin-bottom: 30px;
+	font-size: clamp(1rem, 6vw, 5rem);
+	margin: 1rem auto;
+	padding: 10px 20px;
 	text-shadow: 0.1em 0.1em 0.1em black;
-	background: rgba(0,0,0,0.5);
+	background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+	border-radius: 20px;
+	-webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 	letter-spacing: 4px;
+	max-width: 1080px;
+	height: auto;
 }
 
-/* Sekcja Intro */
+/* Offer */
 
-.intro img {
+.about img {
 	margin: 32px 0;
 	width: 180px;
 	height: 180px;
+	object-fit: contain;
 }
 
-.intro h3 {
+.about h3 {
 	color: #000000;
 	margin: 10px 40px;
 	text-shadow: 0.1em 0.1em 0.1em gray;
@@ -229,14 +238,14 @@ section {
 	background-color: #c39400;
 }
 
-.intro p {
-	color: gray;
+.about p {
+	color: #3e2b0d;
 	font-weight: bold;
 	margin: 0 40px;
 	text-align: center;
 }
 
-/* Sekcja Promo */
+/* Promo */
 
 .promo {
 	background: #3e2b0d;
@@ -267,18 +276,19 @@ section {
 	text-align: center;
 }
 
-/* Sekcja Menu Dnia */
+/* Menu */
 
 .menu .col-half {
 	text-align: center;
 }
 
 .menu p {
-	color: gray;
+	color: #3e2b0d;
 	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.1em gray;
 }
 
-/* Sekcja Rezerwacje */
+/* Booking */
 
 .booking {
 	background: #3e2b0d;
@@ -306,21 +316,53 @@ section {
 	width: 70%;
 }
 
-/* Sekcja Kontakt */
+/* Contacts */
 
-.contact .col-half {
-	margin-top: 16px;
-	text-align: center;
-	color: gray;
-	font-weight: bold;
+.contacts {
+	padding: 90px 0 65px 0;
 }
+
+.contacts-wrapper {
+	display: flex;
+	max-width: 100%;
+}
+
+.contact {
+	flex: 0 0 27.333333%;
+	max-width: 33.333333%;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #c39400;
+	margin: 3%;
+	padding: 10px;
+  }
+
+  .contact p {
+	color: #3e2b0d;
+	font-weight: bold;
+  }
+
+  .contact h4 {
+	text-shadow: 0.1em 0.1em 0.1em gray;
+  }
 
 iframe {
 	border: 1px solid black;
-	width: 100%; /* takes precedence over the width set with the HTML width attribute */
+	border-radius: 10px;
+	width: 94%; /* takes precedence over the width set with the HTML width attribute */
+	height: 40vh;
+	margin: 0 3%;
+	padding: 10px;
 }
 
-/* Stopka */
+.Google-Maps h4 {
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.1em gray;
+	margin: 0 0 3% 0;
+}
+
+/* Footer */
 
 .site-footer {
 	background: #c39400;
