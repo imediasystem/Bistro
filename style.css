@@ -60,7 +60,7 @@
 	   font-size: 48px;
 	   font-family: 'Libre Franklin', sans-serif;
 	   font-size: 16px;
-	   background: #f3f3f3;
+	   background: #212121;
 	   line-height: 1.5;
 	   margin: 0;
 	   padding: 0;
@@ -81,20 +81,7 @@
    
    /* Global Text Styles */
    
-   .center-text {
-	   text-align: center;
-   }
-   
-   p {
-	   margin-top: 6px;
-   }
-   
-   a, a:hover {
-	   text-decoration: none;
-	   color: #3e2b0d;
-	 }
-   
-   h1 {
+    h1 {
 	   font-size: clamp(3rem, 6vw, 5rem);
 	   line-height: 1.5;
 	   font-weight: bold;
@@ -102,17 +89,28 @@
    }
    
    h2 {
-	   font-size: clamp(1rem, 6vw, 2.5rem);
+	   position: relative;
+	   font-size: clamp(1rem, 6vw, 2.7rem);
 	   font-weight: bold;
-	   color: #000000;
+	   color: #ffffff;
+	   text-align: center;
 	   margin-bottom: 48px;
 	   text-transform: uppercase;
-	   text-shadow: 0.1em 0.1em 0.1em grey;
-	   border: 1px solid black;
-	   box-shadow: 2px 4px 10px 4px grey;
-	   border-radius: 5px;
-	   background-color: #c39400;
-   }
+	   text-shadow: 0.1em 0.1em 0.1em #000000;
+	}
+
+	h2:after {
+		position: absolute;
+		display: block;
+		content: "";
+		width: 50%;
+		height: 2px;
+		background: #ffffff;
+		left: 25%;
+		bottom: -5px;
+		box-shadow: 0.1em 0.1em 0.1em #000000;
+		border-radius: 100%;
+	}
    
    h4, strong {
 	   font-weight: bold;
@@ -131,21 +129,22 @@
 	   display: inline-block;
 	   padding: 20px;
 	   margin: 30px 0;
-	   color: black;
+	   color: #ffffff;
 	   text-decoration: none;
 	   text-transform: uppercase;
 	   border: none;
-	   border-radius: 10px;
+	   border-radius: 5px;
 	   background: #c39400;
-	   border: 1px solid black;
+	   border: 1px solid #000000;
 	   font-size: 1rem;
 	   font-weight: bold;
-	   text-shadow: 0.1em 0.1em 0.1em gray;
+	   text-shadow: 0.1em 0.1em 0.1em #000000;
 	   transition: all 0.5s;
    }
    
    .button:hover {
-	   color: #FFFFFF;
+	   color: #000000;
+	   text-shadow: 0.1em 0.1em 0.1em gray;
 	   transition: all 0.5s;
    }
    
@@ -164,7 +163,7 @@
    }
    
    .top a {
-	   color: #FFFFFF;
+	   color: #ffffff;
 	   text-decoration: none;
 	   text-shadow: 0.1em 0.1em 0.1em black;
 	   font-weight: bold;
@@ -173,7 +172,7 @@
    }
    
    .top a:hover {
-	   color: #3e2b0d;
+	   color: #212121;
 	   transition: transition;
    }
    
@@ -186,14 +185,14 @@
    
    .logo i{
 	   color: #FFFFFF;
-	   text-shadow: 0.1em 0.1em 0.1em black;
+	   text-shadow: 0.1em 0.1em 0.1em #000000;
    }
    
-   .main-menu {
+   .nav-menu {
 	   float: right;
    }
    
-   .main-menu li {
+   .nav-menu li {
 	   display: inline-block;
 	   line-height: 60px;
 	   padding: 0 10px;
@@ -203,7 +202,7 @@
    
    .banner {
 	   position: relative;
-	   color: #FFFFFF;
+	   color: #ffffff;
 	   padding: 200px 0;
 	   background: url("img/top.jpg");
 	   height: 100vh;
@@ -217,9 +216,9 @@
 	   font-size: clamp(1rem, 6vw, 5rem);
 	   font-weight: bold;
 	   color: #ffffff;
-	   margin: 1rem auto;
+	   margin: auto;
 	   padding: 10px 20px;
-	   text-shadow: 0.1em 0.1em 0.1em black;
+	   text-shadow: 0.1em 0.1em 0.1em #000000;
 	   background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
 	   border-radius: 20px;
 	   -webkit-backdrop-filter: blur(3px);
@@ -231,22 +230,16 @@
    
    /* About */
    
-   .about {
-	   background-color: #f4f2ee;
-   }
-   
    .description {
-	   background-color: #ffffff;
 	   max-width: 100%;
 	   margin: 1%;
 	   padding: 10px;
-	   border-radius: 10px;
-	   box-shadow: 2px 4px 10px 4px gray;
+	   
    }
    
    .description p {
 	   margin: 10px 30px;
-	   color: #3e2b0d;
+	   color: #ffffff;
 	   font-weight: bold;
 	   text-align: center;
    }
@@ -261,55 +254,51 @@
    .col-one-third {
 	   max-width: 33.333333%;
 	   background-color: #ffffff;
-	   border-radius: 10px;
+	   border-radius: 5px;
 	   margin: 1%;
 	   box-shadow: 2px 4px 10px 4px gray;
+	   overflow: hidden;
+	   position: relative;
    }
    
-   .col-one-third p {
-	   color: #3e2b0d;
-	   font-weight: bold;
-	   margin: 0 30px 30px 30px;
-	   text-align: center;
-   }
-   
-   .col-one-third img {
-	   margin: 20px 0;
-	   width: 180px;
-	   height: 180px;
-	   object-fit: contain;
+    .col-one-third img {
+	   display: block;
+		margin-bottom: 0;
+	   padding: 0;
+	   width: 100%;
+    	height: 250px;
+    	object-fit: cover;
 	   justify-items: center;
-   }
+	}
    
-   .col-one-third h3 {
-	   font-size: 1rem;
-	   color: black;
-	   margin: 10px 30px;
-	   padding: 5px 0;
+    .col-one-third h3 {
+	   font-size: 1.2rem;
+	   color: #ffffff;
+	   margin-top: 0;
+	   padding: 10px 0;
 	   text-align: center;
-	   text-shadow: 0.1em 0.1em 0.1em gray;
-	   border: 1px solid black;
+	   text-shadow: 0.1em 0.1em 0.1em black;
 	   box-shadow: 2px 4px 10px 4px gray;
-	   border-radius: 5px;
 	   background-color: #c39400;
-   }
+    }
    
-   
+	.col-one-third p {
+		color: #212121;
+		font-weight: bold;
+		margin: 0 20px 20px 20px;
+		text-align: center;
+    }
    
    /* Promo */
    
-   .promo {
-	   background: #3e2b0d;
-   }
-   
    .promo h2 {
-	   color: #FFFFFF;
+	   color: #ffffff;
 	   margin-bottom: 10px;
 	   text-shadow: 0.1em 0.1em 0.1em black;
    }
    
    .promo p {
-	   color: #FFFFFF;
+	   color: #ffffff;
 	   font-weight: bold;
    }
    
@@ -325,44 +314,57 @@
    
    .promo .col-half {
 	   text-align: center;
+	   max-width: 45%;
+	   height: auto;
+	   position: relative;
+	   margin: 0 2%;
    }
    
    /* Menu */
    
+   .menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+   }
+
    .menu .col-half {
 	   text-align: center;
+	   max-width: 45%;
+	   height: auto;
+	   position: relative;
+	   margin: 0 2%;
+   }
+
+   .menu .col-half img {
+		align-content: center;
    }
    
    .menu p {
-	   color: #3e2b0d;
+	   color: #ffffff;
 	   font-weight: bold;
-	   text-shadow: 0.1em 0.1em 0.1em gray;
-   }
+	}
    
    /* Booking */
    
-   .booking {
-	   background: #3e2b0d;
-   }
-   
    .booking .col-half {
 	   text-align: center;
-   }
-   
-   .booking .col-half {
-	   color: #FFFFFF;
-   
-   }
+	}
+
+   .booking strong {
+		color: #ffffff;
+	}
    
    .booking h2 {
-	   color: #FFFFFF;
+	   color: #ffffff;
 	   text-shadow: 0.1em 0.1em 0.1em black;
    }
    
    .booking input {
 	   margin-bottom: 16px;
 	   border-radius: 2px;
-	   border: 1px solid #DDDDDD;
+	   border: 1px solid #dddddd;
 	   padding: 8px;
 	   width: 70%;
    }
@@ -382,8 +384,8 @@
 	   flex: 0 0 27.333333%;
 	   max-width: 33.333333%;
 	   text-align: center;
-	   border: 1px solid black;
-	   border-radius: 10px;
+	   border: 1px solid #000000;
+	   border-radius: 5px;
 	   background-color: #c39400;
 	   box-shadow: 2px 4px 10px 4px gray;
 	   margin: 0 3%;
@@ -391,7 +393,7 @@
 	 }
    
    .contact p {
-	   color: #3e2b0d;
+	   color: #212121;
 	   font-weight: bold;
    }
    
@@ -414,19 +416,17 @@
 	   padding: 20px 0;
 	   background-color: #c39400;
 	   border: 1px solid black;
-	   border-radius: 10px;
+	   border-radius: 5px;
 	   box-shadow: 2px 4px 10px 4px gray;
 	   text-shadow: 0.1em 0.1em 0.1em gray;
    }
    
    iframe {
-	   border: 1px solid black;
-	   border-radius: 10px;
+	   border-radius: 5px;
 	   box-shadow: 2px 4px 10px 4px gray;
 	   width: 94%; /* takes precedence over the width set with the HTML width attribute */
 	   height: 40vh;
 	   margin: 0 3%;
-	   padding: 10px;
    }
    
    
@@ -435,15 +435,21 @@
    
    .site-footer {
 	   background: #c39400;
-	   color: #000000;
+	   color: #ffffff;
 	   font-weight: bold;
-	   text-shadow: 0.1em 0.1em 0.1em gray;
+	   text-shadow: 0.1em 0.1em 0.1em #000000;
 	   padding: 16px 0;
    }
    
    .site-footer .container {
 	 display: flex;
 	 justify-content: space-between;
+   }
+
+   .site-footer a {
+		color: #212121;
+		text-decoration: none;
+		text-shadow: 0.1em 0.1em 0.1em gray;
    }
    
    @media screen and (min-width: 800px) {
