@@ -74,7 +74,6 @@
    }
    
    section {
-	   clear: both;
 	   padding: 90px 0 45px 0;
 	   overflow: auto;
    }
@@ -257,7 +256,6 @@
 	   border-radius: 5px;
 	   margin: 1%;
 	   box-shadow: 2px 4px 10px 4px gray;
-	   overflow: hidden;
 	   position: relative;
    }
    
@@ -321,29 +319,56 @@
    }
    
    /* Menu */
-   
-   .menu {
+
+	.menu-wrapper {
 		display: flex;
-		flex-direction: column;
+		max-width: 100%;
 		justify-content: center;
-		align-items: center;
-   }
+		text-align: center;
+	}
 
-   .menu .col-half {
-	   text-align: center;
-	   max-width: 45%;
-	   height: auto;
-	   position: relative;
-	   margin: 0 2%;
-   }
+	.col-one-quarter {
+		position: relative;
+		max-width: 23%;
+		background-color: #ffffff;
+		border-radius: 5px;
+		margin: 1%;
+		box-shadow: 2px 4px 10px 4px gray;
+		overflow: hidden;
+		position: relative;
+	}
 
-   .menu .col-half img {
-		align-content: center;
-   }
-   
-   .menu p {
-	   color: #ffffff;
-	   font-weight: bold;
+	.col-one-quarter img {
+		display: block;
+		margin-bottom: 0;
+		padding: 0;
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		justify-items: center;
+	}
+
+	.col-one-quarter h3 {
+		font-size: 1.2rem;
+		color: #ffffff;
+		margin-top: 0;
+		padding: 10px 0;
+		text-align: center;
+		text-shadow: 0.1em 0.1em 0.1em black;
+		box-shadow: 2px 4px 10px 4px gray;
+		background-color: #c39400;
+	}
+
+	.col-one-quarter p {
+		color: #212121;
+		font-weight: bold;
+		margin: 0 20px 20px 20px;
+		text-align: center;
+	}
+
+	#button-1, #button-2, #button-3, #button-4 {
+		margin: 10px;
+		background-color: #d14c4c;
 	}
    
    /* Booking */
@@ -359,6 +384,7 @@
    .booking h2 {
 	   color: #ffffff;
 	   text-shadow: 0.1em 0.1em 0.1em black;
+	   margin-bottom: 150px;
    }
    
    .booking input {
