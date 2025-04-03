@@ -9,5 +9,8 @@
     "not firefox <= 127",
     "not ios_saf <= 17.5",
     "not safari <= 17.5"
-  ]
+  ],
+  "hints": {
+    "no-inline-styles": "off"
+  }
 }
