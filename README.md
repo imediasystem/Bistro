@@ -1,7 +1,7 @@
 ![www-2](https://github.com/user-attachments/assets/f802990b-33f4-4c0e-b759-e03668bd9118)
 
 ## 🔥 Project Name - BISTRO
-See the live version of [BISTRO](https://imediasystem.github.io/Bistro/)
+See the live version of [BISTRO](https://imediasystem.github.io/Bistro/) ↗️
 
 Developing a website for a local restaurant, emphasizing aesthetic design and ease of use with HTML, CSS, JavaScript, and React to attract and retain customers. This project allows me to combine creativity with technical skills.
 &nbsp;
@@ -18,11 +18,11 @@ Some projects uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.co
 &nbsp;
 
 ## 🔗 See also
-Are you interested in? See my other projects and visit my website [iMedia SysteM - imediasystem.eu](https://imediasystem.eu/)
+Are you interested in? See my other projects and visit my website [iMedia SysteM](https://imediasystem.pl/) ↗️
 &nbsp;
 
 ## 📝 Feel free to contact me
-Write sth nice ;) Find me on [Linkedin](https://www.linkedin.com/in/krzysztof-graca-47698997/)
+Write sth nice ;) Find me on [Linkedin](https://www.linkedin.com/in/krzysztof-graca-47698997/) ↗️
 &nbsp;
 
 ## 👏 Thanks / Special thanks / Credits
