@@ -1,4 +1,4 @@
-![www-2](https://github.com/user-attachments/assets/f802990b-33f4-4c0e-b759-e03668bd9118)
+[![www-2](https://github.com/user-attachments/assets/f802990b-33f4-4c0e-b759-e03668bd9118)](https://imediasystem.github.io/Bistro/)
 
 ## 🔥 Project Name - BISTRO
 See the live version of [BISTRO](https://imediasystem.github.io/Bistro/) ↗️
