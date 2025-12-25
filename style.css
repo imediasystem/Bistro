@@ -185,8 +185,9 @@
         right: -200px;
         background: #c39400;
         width: 200px;
-        height: 100%;
+        height: auto;
         padding-top: 65px;
+		transition: 0.5s;
 	}
 
 	.list li {
@@ -247,12 +248,12 @@
 		height: 100%;
 		z-index: 3;
 		cursor: pointer;
-		opacity: 0;
+		opacity: 0;		
 	}
 
 	.hamburger,
 	.toggle-menu {
-		display: block;
+		display: block;		
 	}
 
 	.navigation input:checked~.hamburger {
@@ -574,52 +575,47 @@
    
 		.header {
 			background-color: #c39400;
-			padding: 0 25px;
 			transition: 0.5s;
 			z-index: 9;
-			height: 90px;
+			height: auto;
+			padding: 5px 25px;
 		}
 
 		.navigation {
-			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		}
-
-		.logo {
-			display: flex;
-			flex-direction: column;
+			min-width: auto;
 		}
 
 		.logo a img {
 			align-items: center;
-			max-height: auto;
+			height: auto;
 		}
 		
 		.list {
 			display: flex;
 			flex-direction: row;
-			align-items: center;
 			justify-content: end;
-			height: 90px;
+			align-items: center;
 			z-index: 1;
 			transition: 0.5s;
 			right: 0px;
 			padding: 0;
 			margin: 0;
+			height: auto;
+			background-color: transparent;
 		}
 
 		.list li {
 			list-style-type: none;
-			width: auto;
+			height: auto;
 		}
 
 		.list li a {
 			color: #f3f3f3;
 			text-decoration: none;
-			display: block;
-			padding: 25px;
+			padding: auto;
 			font-size: 20px;
 			font-weight: bold;
 			line-height: 1;
@@ -675,4 +671,14 @@
 	   .col-one-quarter h3 {
 	   		font-size: 1.5rem;
 	   }
+   }
+
+   @media screen and (min-width: 1024px) {
+		.hamburger,
+		.toggle-menu {
+			display: none;
+		}
+
+
+
    }
