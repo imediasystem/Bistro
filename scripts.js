@@ -11,8 +11,8 @@ $(document).ready(function(){
     'use strict';
     
     var navSelector = '.menu-items';
-    var linksSelector = '.menu-items a';
-    var scrollSpeed = 30;
+    var linksSelector = '.menu-link';
+    var scrollSpeed = 40;
     
     var timer, targetPosition;
   
@@ -53,16 +53,3 @@ $(document).ready(function(){
     }
     
 })();
-
-
-
-// Logo Go To Top Button //
-
-const sign = document.querySelector(".sign");
-
-sign.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-});
