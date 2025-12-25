@@ -235,9 +235,8 @@
    
    .description {
 	   max-width: 100%;
-	   margin: 1%;
+	   margin: 4%;
 	   padding: 10px;
-	   
    }
    
    .description p {
@@ -247,18 +246,15 @@
 	   text-align: center;
    }
    
-   .features-wrapper {
-	   display: flex;
-	   max-width: 100%;
+   .features-wrapper {	   
 	   justify-content: center;
 	   text-align: center;
    }
    
-   .col-one-third {
-	   max-width: 33.333333%;
+   .col-one-third {	   
 	   background-color: #ffffff;
 	   border-radius: 5px;
-	   margin: 1%;
+	   margin: 5%;
 	   box-shadow: 2px 4px 10px 4px gray;
 	   position: relative;
 	   overflow: hidden;
@@ -275,7 +271,7 @@
     }
    
     .col-one-third h3 {
-	   font-size: 1.2rem;
+	   font-size: 1.3rem;
 	   color: #ffffff;
 	   margin-top: 0;
 	   padding: 10px 0;
@@ -288,7 +284,7 @@
 	.col-one-third p {
 		color: #212121;
 		font-weight: bold;
-		margin: 0 20px 20px 20px;
+		margin: 5px 20px 20px 20px;
 		text-align: center;
     }
    
@@ -501,15 +497,32 @@
    
 
 
-   @media screen and (min-width: 834px) {
-	   .col-one-third {
-		   width: 33.33%;
-		   float: left;
+   @media screen and (min-width: 768px) {
+	   
+		.description p {
+			font-size: 18px;
+		}
+
+		.features-wrapper {
+	   		display: flex;
+	   		justify-content: center;
+	   		text-align: center;
+   		}
+	
+		.col-one-third {
+		   	max-width: 33%;
+			margin: 2%;	   
 	   }
+
+	   .col-one-third h3 {
+	   		font-size: 1.5rem;
+	   }
+
 	   .col-half {
 		   width: 50%;
 		   float: left;
 	   }
+
 	   .logo .main-menu {
 		   width: 100%;
 		   display: block;
