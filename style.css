@@ -75,7 +75,7 @@
    }
    
    section {
-	   padding: 45px 0;
+	   padding: 100px 0 45px 0;
 	   overflow: auto;
    }
 
@@ -560,6 +560,11 @@
    .site-footer .container {
 	 display: flex;
 	 justify-content: space-between;
+	 text-align: center;
+   }
+
+   .site-footer p {
+		padding: 0 5px;
    }
 
    .site-footer a {
@@ -572,12 +577,6 @@
 
    @media screen and (min-width: 768px) {
 	   
-		section {
-			padding: 100px 0 40px 0;
-			overflow: auto;
-		}
-	
-		
 		/* Navigation Menu */
    
 		.header {
@@ -694,6 +693,12 @@
    }
 
    @media screen and (min-width: 1024px) {
+		
+		section {
+			padding: 100px 0 40px 0;
+			overflow: auto;
+		}
+	
 		.hamburger,
 		.toggle-menu {
 			display: none;
