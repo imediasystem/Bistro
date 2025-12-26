@@ -192,6 +192,7 @@
 
 	.list li {
     	list-style-type: none;
+		width: 100%;
 	}
 
 	.list li a {
@@ -574,6 +575,7 @@
 		/* Navigation Menu */
    
 		.header {
+			align-items: center;
 			background-color: #c39400;
 			transition: 0.5s;
 			z-index: 9;
@@ -585,7 +587,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			min-width: auto;
 		}
 
 		.logo a img {
@@ -597,11 +598,12 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: end;
-			align-items: center;
+			align-items: start;
+			text-align: center;
 			z-index: 1;
 			transition: 0.5s;
 			right: 0px;
-			padding: 0;
+			padding: 5px 0;
 			margin: 0;
 			height: auto;
 			background-color: transparent;
@@ -609,7 +611,7 @@
 
 		.list li {
 			list-style-type: none;
-			height: auto;
+			
 		}
 
 		.list li a {
