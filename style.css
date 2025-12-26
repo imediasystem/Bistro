@@ -494,18 +494,17 @@
    .contacts-wrapper {
 	   display: flex;
 	   max-width: 100%;
+	   flex-direction: column;
    }
    
    .contact {
-	   flex: 0 0 27.333333%;
-	   max-width: 33.333333%;
 	   text-align: center;
 	   border: 1px solid #000000;
 	   border-radius: 5px;
 	   background-color: #c39400;
 	   box-shadow: 2px 4px 10px 4px gray;
-	   margin: 0 3%;
-	   padding: 10px;
+	   margin: 2%;
+	   padding: 2%;
 	 }
    
    .contact p {
@@ -526,9 +525,9 @@
    
    .Google-Maps h4 {
 	   text-align: center;
-	   max-width: 94%;
+	   max-width: 96%;
 	   height: auto;
-	   margin: 3% 3% 3%;
+	   margin: 2%;
 	   padding: 20px 0;
 	   background-color: #c39400;
 	   border: 1px solid black;
@@ -540,9 +539,9 @@
    iframe {
 	   border-radius: 5px;
 	   box-shadow: 2px 4px 10px 4px gray;
-	   width: 94%; /* takes precedence over the width set with the HTML width attribute */
+	   width: 96%; /* takes precedence over the width set with the HTML width attribute */
 	   height: 40vh;
-	   margin: 0 3%;
+	   margin: 2%;
    }
    
    
@@ -679,6 +678,17 @@
 	   .col-one-quarter h3 {
 	   		font-size: 1.5rem;
 	   }
+
+	   .contact {
+	   		flex: 0 0 29.333333%;
+	   		max-width: 33.333333%;
+	   }
+
+	   .contacts-wrapper {
+			display: flex;
+			max-width: 100%;
+			flex-direction: row;
+		}
    }
 
    @media screen and (min-width: 1024px) {
