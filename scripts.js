@@ -7,49 +7,49 @@ $(document).ready(function(){
 
 // Scrolling Section //
 
-(function(){
-    'use strict';
+// (function(){
+//     'use strict';
     
-    var navSelector = '.list';
-    var linksSelector = '.list a';
-    var scrollSpeed = 40;
+//     var navSelector = '.list';
+//     var linksSelector = '.list a';
+//     var scrollSpeed = 40;
     
-    var timer, targetPosition;
+//     var timer, targetPosition;
   
-    function scroll() {
-      var delta = targetPosition - document.documentElement.scrollTop;
-      if (delta > 0) {
-        document.documentElement.scrollTop += Math.min(delta, scrollSpeed);
-      }
-      else if (delta < 0) {
-        document.documentElement.scrollTop += Math.max(delta, -scrollSpeed);
-      }
-      else {
-        clearInterval(timer);
-      }
+//     function scroll() {
+//       var delta = targetPosition - document.documentElement.scrollTop;
+//       if (delta > 0) {
+//         document.documentElement.scrollTop += Math.min(delta, scrollSpeed);
+//       }
+//       else if (delta < 0) {
+//         document.documentElement.scrollTop += Math.max(delta, -scrollSpeed);
+//       }
+//       else {
+//         clearInterval(timer);
+//       }
       
-      if(window.innerHeight >= document.documentElement.scrollHeight - document.documentElement.scrollTop) {
-        clearInterval(timer);
-      }
-    };
+//       if(window.innerHeight >= document.documentElement.scrollHeight - document.documentElement.scrollTop) {
+//         clearInterval(timer);
+//       }
+//     };
     
-    var onLinkClick = function(event){
-      event.preventDefault();
-      clearInterval(timer)
+//     var onLinkClick = function(event){
+//       event.preventDefault();
+//       clearInterval(timer)
       
-      var navHeight = document.querySelector(navSelector).offsetHeight;
-      var target = document.querySelector(this.getAttribute('href'));
-      if(target){
-        targetPosition = Math.max(0, target.offsetTop);
-        scroll();
-        timer = setInterval(scroll, 1000/30);
-      }
-    };
+//       var navHeight = document.querySelector(navSelector).offsetHeight;
+//       var target = document.querySelector(this.getAttribute('href'));
+//       if(target){
+//         targetPosition = Math.max(0, target.offsetTop);
+//         scroll();
+//         timer = setInterval(scroll, 1000/30);
+//       }
+//     };
     
-    var links = document.querySelectorAll(linksSelector);
+//     var links = document.querySelectorAll(linksSelector);
     
-    for(var i=0; i<links.length; i++){
-      links[i].addEventListener('click', onLinkClick);
-    }
+//     for(var i=0; i<links.length; i++){
+//       links[i].addEventListener('click', onLinkClick);
+//     }
     
-})();
+// })();
