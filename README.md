@@ -1,6 +1,7 @@
 [![www-2](https://github.com/user-attachments/assets/f802990b-33f4-4c0e-b759-e03668bd9118)](https://imediasystem.github.io/Bistro/)
 
 ## 🔥 Project Name - BISTRO
+[![View Demo](https://img.shields.io/badge/LIVE_DEMO-Visit_Website-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://imediasystem.github.io/Bistro/)
 See the live version of [BISTRO](https://imediasystem.github.io/Bistro/) ↗️
 
 Developing a website for a local restaurant, emphasizing aesthetic design and ease of use with HTML, CSS, JavaScript, and React to attract and retain customers. This project allows me to combine creativity with technical skills.
